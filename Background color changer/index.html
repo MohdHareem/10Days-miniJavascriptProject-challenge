@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.6s ease;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #ffcc70;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+
+button {
+  height: 50px;
+  width: 90px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+
+#red { background-color: #e63946; }
+#blue { background-color: #457b9d; }
+#orange { background-color: #f77f00; }
+#pink { background-color: #ff6bcb; color: black; }
+#green { background-color: #38b000; }
+
+    </style>
+</head>
+<body style="background-color: black; color: white;display: flex; align-items: center; justify-content: center; height: 100vh;">
+    <div id="parent">
+        <button id="red" style="background-color: red;">Red</button>
+        <button id="blue" style="background-color: blue;">Blue</button>
+        <button id="orange" style="background-color: orange;">Orange</button>
+        <button id="pink" style="background-color: pink;">Pink</button>
+        <button id="green" style="background-color: green;">Green</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
