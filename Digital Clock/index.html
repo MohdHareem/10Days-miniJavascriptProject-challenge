@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock></title>
+  <style>
+
+body {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#Clock {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: glow 3s infinite alternate;
+}
+
+#time {
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+#date {
+    margin-top: 15px;
+    font-size: 22px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+    to {
+        box-shadow: 0 0 35px rgba(0, 255, 255, 0.6);
+    }
+}
+
+  </style>
+
+</head>
+<body>
+   <div id="Clock">
+    <div id="time"></div>
+       <div id="date"></div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
