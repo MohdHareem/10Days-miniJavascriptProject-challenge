@@ -1,7 +1,6 @@
 const timeDiv = document.getElementById("time");
 const dateDiv = document.getElementById("date")
 
-
 setInterval(() =>{
 let time = new Date();
 timeDiv.textContent = time.toLocaleTimeString();
