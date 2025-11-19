@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(135deg, #1e1e1e, #292929);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  width: 250px;
+  outline: none;
+  background: #fff;
+  color: #000;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+form button {
+  background: #4caf50;
+  color: white;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+#allTask {
+  margin-top: 30px;
+  width: 80%;
+  max-width: 450px;
+}
+
+#allTask div {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+#allTask div:hover {
+  transform: scale(1.02);
+}
+
+#allTask span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#allTask button {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+#allTask button:nth-child(2) {
+  background: #2196f3;
+  color: white;
+}
+
+#allTask button:nth-child(2):hover {
+  background: #1976d2;
+}
+
+#allTask button:nth-child(3) {
+  background: #f44336;
+  color: white;
+}
+
+#allTask button:nth-child(3):hover {
+  background: #d32f2f;
+}
